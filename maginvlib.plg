@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: maginvlib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\misha\AppData\Local\Temp\RSP5814.tmp" with contents
+[
+/nologo /Zp1 /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/maginvlib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\temp\compensate\maginvlib\dnls1estimator.cpp"
+"C:\temp\compensate\maginvlib\l2estimator.cpp"
+"C:\temp\compensate\maginvlib\magarray.cpp"
+"C:\temp\compensate\maginvlib\magdata.cpp"
+"C:\temp\compensate\maginvlib\magfunc.cpp"
+"C:\temp\compensate\maginvlib\maginv.cpp"
+"C:\temp\compensate\maginvlib\tn_estimator.cpp"
+"C:\temp\compensate\maginvlib\hooke.c"
+]
+Creating command line "cl.exe @C:\Users\misha\AppData\Local\Temp\RSP5814.tmp" 
+Creating temporary file "C:\Users\misha\AppData\Local\Temp\RSP5824.tmp" with contents
+[
+/nologo /out:"Debug\maginvlib.lib" 
+.\Debug\dcov.obj
+.\Debug\df551_1.obj
+.\Debug\dipole1d.obj
+.\Debug\dnls1.obj
+.\Debug\dnls1estimator.obj
+.\Debug\dnls1m_dr.obj
+.\Debug\dz29rls.obj
+.\Debug\dz29svd.obj
+.\Debug\gradprofile.obj
+.\Debug\invers_m.obj
+.\Debug\l1estimator.obj
+.\Debug\l2estimator.obj
+.\Debug\line.obj
+.\Debug\magarray.obj
+.\Debug\magbackground.obj
+.\Debug\magbackground2.obj
+.\Debug\magchannel.obj
+.\Debug\magcollection.obj
+.\Debug\magdata.obj
+.\Debug\magdata1d.obj
+.\Debug\magdatacollection.obj
+.\Debug\magdipole.obj
+.\Debug\magdipolethread.obj
+.\Debug\magfunc.obj
+.\Debug\maggriddata.obj
+.\Debug\maginv.obj
+.\Debug\magobject.obj
+.\Debug\magpipe.obj
+.\Debug\magprofiles.obj
+.\Debug\magsegments.obj
+.\Debug\magsnake.obj
+.\Debug\monopole.obj
+.\Debug\splik.obj
+.\Debug\testprofile.obj
+.\Debug\tn_dr.obj
+.\Debug\tn_estimator.obj
+.\Debug\tn_m.obj
+.\Debug\hooke.obj
+]
+Creating command line "link.exe -lib @C:\Users\misha\AppData\Local\Temp\RSP5824.tmp"
+<h3>Output Window</h3>
+Compiling...
+hooke.c
+c:\temp\compensate\maginvlib\hooke.c(215) : warning C4101: 'j' : unreferenced local variable
+dnls1estimator.cpp
+l2estimator.cpp
+magarray.cpp
+c:\temp\compensate\maginvlib\magarray.cpp(132) : warning C4101: 'j' : unreferenced local variable
+c:\program files\microsoft visual studio\vc98\include\vector(39) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,int>' : identifier was truncated to '255' characters in the debug information
+        c:\program files\microsoft visual studio\vc98\include\vector(39) : while compiling class-template member function '__thiscall std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >(const std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &)'
+c:\program files\microsoft visual studio\vc98\include\vector(39) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,int>' : identifier was truncated to '255' characters in the debug information
+        c:\program files\microsoft visual studio\vc98\include\vector(39) : while compiling class-template member function '__thiscall std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >(const std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &)'
+magdata.cpp
+c:\temp\compensate\maginvlib\magdata.cpp(99) : warning C4101: 'k' : unreferenced local variable
+magfunc.cpp
+c:\temp\compensate\maginvlib\magfunc.cpp(88) : warning C4101: 'lsize' : unreferenced local variable
+c:\temp\compensate\maginvlib\magfunc.cpp(90) : warning C4101: 'header' : unreferenced local variable
+maginv.cpp
+c:\temp\compensate\maginvlib\maginv.cpp(210) : warning C4101: 'k' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(379) : warning C4101: 'n_total' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(471) : warning C4101: 'm_back' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(471) : warning C4101: 'm_total' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(474) : warning C4101: 'i' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(654) : warning C4101: 'z1' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(652) : warning C4101: 'n_pos' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(652) : warning C4101: 'n_start' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(652) : warning C4101: 'n_params' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(654) : warning C4101: 'T' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(652) : warning C4101: 'lin_start' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(654) : warning C4101: 'x1' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(653) : warning C4101: 'x' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(653) : warning C4101: 'y' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(646) : warning C4101: 'i' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(653) : warning C4101: 'z' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(646) : warning C4101: 'j' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(646) : warning C4101: 'k' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(654) : warning C4101: 'y1' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(655) : warning C4101: 'm_total_objects' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(652) : warning C4101: 'nonlin_start' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(726) : warning C4101: 'm_back' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(726) : warning C4101: 'm_total' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(836) : warning C4101: 'm_back' : unreferenced local variable
+c:\temp\compensate\maginvlib\maginv.cpp(839) : warning C4101: 'j' : unreferenced local variable
+c:\program files\microsoft visual studio\vc98\include\vector(39) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,int>' : identifier was truncated to '255' characters in the debug information
+        c:\program files\microsoft visual studio\vc98\include\vector(39) : while compiling class-template member function '__thiscall std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >(const std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &)'
+c:\program files\microsoft visual studio\vc98\include\vector(39) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,int>' : identifier was truncated to '255' characters in the debug information
+        c:\program files\microsoft visual studio\vc98\include\vector(39) : while compiling class-template member function '__thiscall std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >(const std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &)'
+tn_estimator.cpp
+c:\program files\microsoft visual studio\vc98\include\vector(39) : warning C4786: 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\vector(60) : warning C4786: 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+c:\temp\compensate\maginvlib\tn_estimator.cpp(30) : warning C4101: 'maxfev' : unreferenced local variable
+Creating library...
+
+
+
+<h3>Results</h3>
+maginvlib.lib - 0 error(s), 37 warning(s)
+</pre>
+</body>
+</html>

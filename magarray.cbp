@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="magarray" />
+		<Option pch_mode="2" />
+		<Option compiler="hacked_openwatcom_w32_compiler" />
+		<Build>
+			<Target title="Win32 Release">
+				<Option output="D:\wx168E\samples\maginvlib\Release\magarray.exe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="1" />
+				<Option compiler="hacked_openwatcom_w32_compiler" />
+				<Compiler>
+					<Add directory="..\maginvlib" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/machine:I386" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="libmaginvlibd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Debug">
+				<Option output="D:\wx168E\samples\maginvlib\magarray___Win32_Debug\magarray.exe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="magarray___Win32_Debug" />
+				<Option type="1" />
+				<Option compiler="hacked_openwatcom_w32_compiler" />
+				<Compiler>
+					<Add option="-d2" />
+					<Add option="-hd" />
+					<Add option="/W3" />
+					<Add option="/Gm" />
+					<Add option="/GX" />
+					<Add option="/ZI" />
+					<Add option="/Od" />
+					<Add option="/DWIN32" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_CONSOLE" />
+					<Add option="/D_MBCS" />
+					<Add option="/YX" />
+					<Add option="/FD" />
+					<Add option="/GZ" />
+					<Add option="/Zp1" />
+					<Add option="/MTd" />
+					<Add directory="..\maginvlib" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/debug" />
+					<Add option="/machine:I386" />
+					<Add option="/pdbtype:sept" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="../maginvlib/Debug/maginvlib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-bm" />
+			<Add option="-xs" />
+			<Add option="-xr" />
+		</Compiler>
+		<Unit filename="..\magarray\magarray.cpp" />
+		<Unit filename="..\magarray\targetarray.cpp" />
+		<Unit filename="..\magarray\targetarray.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

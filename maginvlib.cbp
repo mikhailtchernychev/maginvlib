@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="maginvlib" />
+		<Option pch_mode="2" />
+		<Option compiler="hacked_openwatcom_w32_compiler" />
+		<Build>
+			<Target title="default">
+				<Option output="libmaginvlib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="hacked_openwatcom_w32_compiler" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-ox" />
+					<Add option="-ot" />
+				</Compiler>
+			</Target>
+			<Target title="Debug">
+				<Option output="libmaginvlibd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="hacked_openwatcom_w32_compiler" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-od" />
+					<Add option="-d2" />
+				</Compiler>
+				<Environment>
+					<Variable name="debug2" value="all" />
+					<Variable name="debug1" value="debug" />
+				</Environment>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;Debug;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-bm" />
+			<Add option="-xs" />
+			<Add option="-xr" />
+		</Compiler>
+		<Unit filename="dcov.cpp" />
+		<Unit filename="df551_1.c">
+			<Option compilerVar="CC" />
+			<Option compiler="ow" use="1" buildCommand="$compiler -q -c -q -c -bm  -ox -ot  $includes -fo=$object $file" />
+			<Option compiler="hacked_openwatcom_w32_compiler" use="1" buildCommand="$compiler -q -c -cc $includes -fo=$object $file" />
+		</Unit>
+		<Unit filename="dnls1.cpp" />
+		<Unit filename="dnls1estimator.cpp" />
+		<Unit filename="dnls1estimator.h" />
+		<Unit filename="dnls1m_dr.cpp" />
+		<Unit filename="dnls1m_dr.h" />
+		<Unit filename="dz29rls.cpp" />
+		<Unit filename="dz29svd.cpp" />
+		<Unit filename="fcnbase.h" />
+		<Unit filename="fieldtype.h" />
+		<Unit filename="gradprofile.cpp" />
+		<Unit filename="gradprofile.h" />
+		<Unit filename="grd7.h" />
+		<Unit filename="invers_m.c">
+			<Option compilerVar="CC" />
+			<Option compiler="ow" use="1" buildCommand="$compiler -q -c -q -c -bm  -ox -ot  $includes -fo=$object $file" />
+			<Option compiler="hacked_openwatcom_w32_compiler" use="1" buildCommand="$compiler -q -c -cc $includes -fo=$object $file" />
+		</Unit>
+		<Unit filename="inversion.h" />
+		<Unit filename="l1estimator.cpp" />
+		<Unit filename="l1estimator.h" />
+		<Unit filename="l2estimator.cpp" />
+		<Unit filename="l2estimator.h" />
+		<Unit filename="magarray.cpp" />
+		<Unit filename="magarray.h" />
+		<Unit filename="magbackground.cpp" />
+		<Unit filename="magbackground.h" />
+		<Unit filename="magbackground2.cpp" />
+		<Unit filename="magbackground2.h" />
+		<Unit filename="magchannel.cpp" />
+		<Unit filename="magchannel.h" />
+		<Unit filename="magcollection.cpp" />
+		<Unit filename="magcollection.h" />
+		<Unit filename="magdata.cpp" />
+		<Unit filename="magdata.h" />
+		<Unit filename="magdatacollection.cpp" />
+		<Unit filename="magdatacollection.h" />
+		<Unit filename="magdipole.cpp" />
+		<Unit filename="magdipole.h" />
+		<Unit filename="magdipolethread.cpp" />
+		<Unit filename="magdipolethread.h" />
+		<Unit filename="magfunc.cpp" />
+		<Unit filename="magfunc.h" />
+		<Unit filename="maggriddata.cpp" />
+		<Unit filename="maggriddata.h" />
+		<Unit filename="maginv.cpp" />
+		<Unit filename="maginv.h" />
+		<Unit filename="magobject.cpp" />
+		<Unit filename="magobject.h" />
+		<Unit filename="magpipe.cpp" />
+		<Unit filename="magpipe.h" />
+		<Unit filename="magsegments.cpp" />
+		<Unit filename="magsegments.h" />
+		<Unit filename="magsnake.cpp" />
+		<Unit filename="magsnake.h" />
+		<Unit filename="profwrapper.h" />
+		<Unit filename="splik.cpp" />
+		<Unit filename="testprofile.cpp" />
+		<Unit filename="testprofile.h" />
+		<Unit filename="tn_dr.cpp" />
+		<Unit filename="tn_dr.h" />
+		<Unit filename="tn_estimator.cpp" />
+		<Unit filename="tn_estimator.h" />
+		<Unit filename="tn_m.c">
+			<Option compilerVar="CC" />
+			<Option compiler="ow" use="1" buildCommand="$compiler  -q -c -bm  -ox -ot  $includes -fo=$object $file" />
+			<Option compiler="hacked_openwatcom_w32_compiler" use="1" buildCommand="$compiler -q -c -cc $includes -fo=$object $file" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

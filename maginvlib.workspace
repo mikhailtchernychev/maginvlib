@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="maginv">
+		<Project filename="maginvlib.cbp" active="1" />
+		<Project filename="..\maggrad\maggrad.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

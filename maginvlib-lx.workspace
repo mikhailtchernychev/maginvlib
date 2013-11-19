@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="maginvlib">
+		<Project filename="maginvlib-lx.cbp" active="1" />
+		<Project filename="magarray-lx.cbp" />
+		<Project filename="maggrad-lx.cbp" />
+		<Project filename="dipole1d-lx.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

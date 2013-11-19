@@ -1,0 +1,129 @@
+# Project: maginv
+# Makefile created by Dev-C++ 4.9.9.0
+
+CPP  = g++ -D__DEBUG__ 
+CC   = gcc -D__DEBUG__ 
+OBJ  = tn_m.o dcov.o df551_1.o dnls1estimator.o dnls1m_dr.o dz29rls.o \
+dz29svd.o gradprofile.o invers_m.o l1estimator.o l2estimator.o magbackground.o \
+magcollection.o magdata.o magdatacollection.o magdipole.o magfunc.o \
+maggriddata.o maginv.o magobject.o magpipe.o testprofile.o tn_dr.o \
+tn_estimator.o dnls1.o magarray.o splik.o magchannel.o magbackground2.o \
+magsnake.o magsegments.o  magdipolethread.o monopole.o $(RES) 
+LINKOBJ  = tn_m.o dcov.o df551_1.o dnls1estimator.o dnls1m_dr.o dz29rls.o \
+dz29svd.o gradprofile.o invers_m.o l1estimator.o l2estimator.o magbackground.o \
+magcollection.o magdata.o magdatacollection.o magdipole.o magfunc.o \
+maggriddata.o maginv.o magobject.o magpipe.o testprofile.o tn_dr.o \
+tn_estimator.o dnls1.o magarray.o splik.o magchannel.o magbackground2.o \
+magsnake.o magsegments.o magdipolethread.o monopole.o $(RES)
+
+#LIBS =  -L"C:/Dev-Cpp/lib"  -g3 
+#INCS =  -I"C:/Dev-Cpp/include" 
+#CXXINCS =  -I"C:/Dev-Cpp/include/c++"  -I"C:/Dev-Cpp/include/c++/mingw32"  -I"C:/Dev-Cpp/include/c++/backward"  -I"C:/Dev-Cpp/include" 
+BIN  = maginvlib.a
+CXXFLAGS = $(CXXINCS)   -g3
+CFLAGS = $(INCS)   -g3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before maginvlib.a all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	ar r $(BIN) $(LINKOBJ)
+	ranlib $(BIN)
+
+tn_m.o: tn_m.c
+	$(CC) -c tn_m.c -o tn_m.o $(CFLAGS)
+
+dcov.o: dcov.cpp
+	$(CPP) -c dcov.cpp -o dcov.o $(CXXFLAGS)
+
+df551_1.o: df551_1.c
+	$(CC) -c df551_1.c -o df551_1.o $(CFLAGS)
+
+dnls1estimator.o: dnls1estimator.cpp
+	$(CPP) -c dnls1estimator.cpp -o dnls1estimator.o $(CXXFLAGS)
+
+dnls1m_dr.o: dnls1m_dr.cpp
+	$(CPP) -c dnls1m_dr.cpp -o dnls1m_dr.o $(CXXFLAGS)
+
+dz29rls.o: dz29rls.cpp
+	$(CPP) -c dz29rls.cpp -o dz29rls.o $(CXXFLAGS)
+
+dz29svd.o: dz29svd.cpp
+	$(CPP) -c dz29svd.cpp -o dz29svd.o $(CXXFLAGS)
+
+gradprofile.o: gradprofile.cpp
+	$(CPP) -c gradprofile.cpp -o gradprofile.o $(CXXFLAGS)
+
+invers_m.o: invers_m.c
+	$(CC) -c invers_m.c -o invers_m.o $(CFLAGS)
+
+l1estimator.o: l1estimator.cpp
+	$(CPP) -c l1estimator.cpp -o l1estimator.o $(CXXFLAGS)
+
+l2estimator.o: l2estimator.cpp
+	$(CPP) -c l2estimator.cpp -o l2estimator.o $(CXXFLAGS)
+
+magbackground.o: magbackground.cpp
+	$(CPP) -c magbackground.cpp -o magbackground.o $(CXXFLAGS)
+
+magcollection.o: magcollection.cpp
+	$(CPP) -c magcollection.cpp -o magcollection.o $(CXXFLAGS)
+
+magdata.o: magdata.cpp
+	$(CPP) -c magdata.cpp -o magdata.o $(CXXFLAGS)
+
+magdatacollection.o: magdatacollection.cpp
+	$(CPP) -c magdatacollection.cpp -o magdatacollection.o $(CXXFLAGS)
+
+magdipole.o: magdipole.cpp
+	$(CPP) -c magdipole.cpp -o magdipole.o $(CXXFLAGS)
+
+magfunc.o: magfunc.cpp
+	$(CPP) -c magfunc.cpp -o magfunc.o $(CXXFLAGS)
+
+maggriddata.o: maggriddata.cpp
+	$(CPP) -c maggriddata.cpp -o maggriddata.o $(CXXFLAGS)
+
+maginv.o: maginv.cpp
+	$(CPP) -c maginv.cpp -o maginv.o $(CXXFLAGS)
+
+magobject.o: magobject.cpp
+	$(CPP) -c magobject.cpp -o magobject.o $(CXXFLAGS)
+
+magpipe.o: magpipe.cpp
+	$(CPP) -c magpipe.cpp -o magpipe.o $(CXXFLAGS)
+
+testprofile.o: testprofile.cpp
+	$(CPP) -c testprofile.cpp -o testprofile.o $(CXXFLAGS)
+
+tn_dr.o: tn_dr.cpp
+	$(CPP) -c tn_dr.cpp -o tn_dr.o $(CXXFLAGS)
+
+tn_estimator.o: tn_estimator.cpp
+	$(CPP) -c tn_estimator.cpp -o tn_estimator.o $(CXXFLAGS)
+
+dnls1.o: dnls1.cpp
+	$(CPP) -c dnls1.cpp -o dnls1.o $(CXXFLAGS)
+
+magarray.o: magarray.cpp
+	$(CPP) -c magarray.cpp -o magarray.o $(CXXFLAGS)
+
+magchannel.o: magchannel.cpp
+	$(CPP) -c magchannel.cpp -o magchannel.o $(CXXFLAGS)
+
+magbackground2.o: magbackground2.cpp
+	$(CPP) -c magbackground2.cpp -o magbackground2.o $(CXXFLAGS)
+
+splik.o: splik.cpp
+	$(CPP) -c splik.cpp -o splik.o $(CXXFLAGS)
+
+magsnake.o: magsnake.cpp magsnake.h
+	$(CPP) -c magsnake.cpp -o magsnake.o $(CXXFLAGS)
+
+magsegments.o: magsegments.cpp magsegments.h
+	$(CPP) -c magsegments.cpp -o magsegments.o $(CXXFLAGS)

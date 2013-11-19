@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="All" />
+	<File name="dcov.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="df551_1.c" open="0" top="0" tabpos="2">
+		<Cursor position="262" topLine="0" />
+	</File>
+	<File name="dnls1.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="204957" topLine="5977" />
+	</File>
+	<File name="dnls1estimator.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="365" topLine="0" />
+	</File>
+	<File name="inversion.h" open="0" top="0" tabpos="5">
+		<Cursor position="304" topLine="3" />
+	</File>
+	<File name="magarray.h" open="0" top="0" tabpos="7">
+		<Cursor position="3263" topLine="103" />
+	</File>
+	<File name="magchannel.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="3157" topLine="124" />
+	</File>
+	<File name="magdatacollection.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="607" topLine="17" />
+	</File>
+	<File name="magdatacollection.h" open="0" top="0" tabpos="6">
+		<Cursor position="519" topLine="16" />
+	</File>
+	<File name="maggriddata.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="280" topLine="3" />
+	</File>
+	<File name="maggriddata.h" open="0" top="0" tabpos="2">
+		<Cursor position="1127" topLine="17" />
+	</File>
+	<File name="maginv.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="14226" topLine="551" />
+	</File>
+	<File name="maginv.h" open="0" top="0" tabpos="1">
+		<Cursor position="4694" topLine="116" />
+	</File>
+	<File name="tn_m.c" open="0" top="0" tabpos="9">
+		<Cursor position="602" topLine="2" />
+	</File>
+</CodeBlocks_layout_file>

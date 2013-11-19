@@ -1,0 +1,125 @@
+# Project: maginv
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = tn_m.obj dcov.obj df551_1.obj dnls1estimator.obj dnls1m_dr.obj dz29rls.obj dz29svd.obj gradprofile.obj invers_m.obj l1estimator.obj l2estimator.obj magbackground.obj magcollection.obj magdata.obj magdatacollection.obj magdipole.obj magfunc.obj maggriddata.obj maginv.obj magobject.obj magpipe.obj testprofile.obj tn_dr.obj tn_estimator.obj dnls1.obj magarray.obj magchannel.obj magbackground2.obj splik.obj magsegments.obj magsnake.obj magdipolethread.obj $(RES)
+LINKOBJ  = tn_m.obj dcov.obj df551_1.obj dnls1estimator.obj dnls1m_dr.obj dz29rls.obj dz29svd.obj gradprofile.obj invers_m.obj l1estimator.obj l2estimator.obj magbackground.obj magcollection.obj magdata.obj magdatacollection.obj magdipole.obj magfunc.obj maggriddata.obj maginv.obj magobject.obj magpipe.obj testprofile.obj tn_dr.obj tn_estimator.obj dnls1.obj magarray.obj magchannel.obj magbackground2.obj splik.obj magsegments.obj magsnake.obj magdipolethread.obj $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  -g3 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"C:/Dev-Cpp/include/wx/msw"  -I"C:/Dev-Cpp/include/wx/generic"  -I"C:/Dev-Cpp/include/wx/animate"  -I"C:/Dev-Cpp/include/wx/fl"  -I"C:/Dev-Cpp/include/wx/gizmos"  -I"C:/Dev-Cpp/include/wx/html"  -I"C:/Dev-Cpp/include/wx/mmedia"  -I"C:/Dev-Cpp/include/wx/net"  -I"C:/Dev-Cpp/include/wx/ogl"  -I"C:/Dev-Cpp/include/wx/plot"  -I"C:/Dev-Cpp/include/wx/protocol"  -I"C:/Dev-Cpp/include/wx/stc"  -I"C:/Dev-Cpp/include/wx/svg"  -I"C:/Dev-Cpp/include/wx/xml"  -I"C:/Dev-Cpp/include/wx/xrc"  -I"C:/Dev-Cpp/include/wx" 
+BIN  = maginvlib.lib
+CXXFLAGS = $(CXXINCS)  -g3
+CFLAGS = $(INCS)  -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before maginvlib.lib all-after
+
+
+clean: clean-custom
+clean: 
+	$(RM) $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	ar r $(BIN) $(LINKOBJ)
+	ranlib $(BIN)
+
+tn_m.obj: tn_m.c C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/include/stdio.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/math.h
+	$(CC) -c tn_m.c -o tn_m.obj $(CFLAGS)
+
+dcov.obj: dcov.cpp C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h
+	$(CPP) -c dcov.cpp -o dcov.obj $(CXXFLAGS)
+
+df551_1.obj: df551_1.c C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/include/stdio.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/math.h
+	$(CC) -c df551_1.c -o df551_1.obj $(CFLAGS)
+
+dnls1estimator.obj: dnls1estimator.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/string.h   C:/Dev-Cpp/include/assert.h dnls1estimator.h inversion.h   magdatacollection.h magdata.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map C:/Dev-Cpp/include/c++/3.4.2/vector   magfunc.h dnls1m_dr.h fcnbase.h
+	$(CPP) -c dnls1estimator.cpp -o dnls1estimator.obj $(CXXFLAGS)
+
+dnls1m_dr.obj: dnls1m_dr.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/string.h C:/Dev-Cpp/include/memory.h   C:/Dev-Cpp/include/math.h dnls1m_dr.h fcnbase.h
+	$(CPP) -c dnls1m_dr.cpp -o dnls1m_dr.obj $(CXXFLAGS)
+
+dz29rls.obj: dz29rls.cpp 
+	$(CPP) -c dz29rls.cpp -o dz29rls.obj $(CXXFLAGS)
+
+dz29svd.obj: dz29svd.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h
+	$(CPP) -c dz29svd.cpp -o dz29svd.obj $(CXXFLAGS)
+
+gradprofile.obj: gradprofile.cpp C:/Dev-Cpp/include/stdio.h C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magdata.h C:/Dev-Cpp/include/assert.h   magobject.h fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map   C:/Dev-Cpp/include/c++/3.4.2/vector C:/Dev-Cpp/include/c++/3.4.2/string
+	$(CPP) -c gradprofile.cpp -o gradprofile.obj $(CXXFLAGS)
+
+invers_m.obj: invers_m.c C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/include/stdio.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/math.h
+	$(CC) -c invers_m.c -o invers_m.obj $(CFLAGS)
+
+l1estimator.obj: l1estimator.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/string.h l1estimator.h
+	$(CPP) -c l1estimator.cpp -o l1estimator.obj $(CXXFLAGS)
+
+l2estimator.obj: l2estimator.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magfunc.h l2estimator.h
+	$(CPP) -c l2estimator.cpp -o l2estimator.obj $(CXXFLAGS)
+
+magbackground.obj: magbackground.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/string.h C:/Dev-Cpp/include/math.h magbackground.h   magobject.h fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magbackground.cpp -o magbackground.obj $(CXXFLAGS)
+
+magcollection.obj: magcollection.cpp C:/Dev-Cpp/include/stdio.h C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/assert.h   C:/Dev-Cpp/include/c++/3.4.2/vector magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magcollection.cpp -o magcollection.obj $(CXXFLAGS)
+
+magdata.obj: magdata.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/assert.h magobject.h   fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map magfunc.h
+	$(CPP) -c magdata.cpp -o magdata.obj $(CXXFLAGS)
+
+magdatacollection.obj: magdatacollection.cpp C:/Dev-Cpp/include/stdio.h C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/assert.h magobject.h   fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map   C:/Dev-Cpp/include/c++/3.4.2/vector
+	$(CPP) -c magdatacollection.cpp -o magdatacollection.obj $(CXXFLAGS)
+
+magdipole.obj: magdipole.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magdipole.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magdipole.cpp -o magdipole.obj $(CXXFLAGS)
+
+magfunc.obj: magfunc.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h grd7.h magfunc.h
+	$(CPP) -c magfunc.cpp -o magfunc.obj $(CXXFLAGS)
+
+maggriddata.obj: maggriddata.cpp C:/Dev-Cpp/include/stdio.h C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/assert.h magobject.h   fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c maggriddata.cpp -o maggriddata.obj $(CXXFLAGS)
+
+maginv.obj: maginv.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h maginv.h C:/Dev-Cpp/include/assert.h   magdatacollection.h magdata.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map C:/Dev-Cpp/include/c++/3.4.2/vector   magcollection.h magfunc.h inversion.h
+	$(CPP) -c maginv.cpp -o maginv.obj $(CXXFLAGS)
+
+magobject.obj: magobject.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/string.h   C:/Dev-Cpp/include/assert.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magobject.cpp -o magobject.obj $(CXXFLAGS)
+
+magpipe.obj: magpipe.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magpipe.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magpipe.cpp -o magpipe.obj $(CXXFLAGS)
+
+testprofile.obj: testprofile.cpp C:/Dev-Cpp/include/stdio.h C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magdata.h C:/Dev-Cpp/include/assert.h   magobject.h fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map   C:/Dev-Cpp/include/c++/3.4.2/vector C:/Dev-Cpp/include/c++/3.4.2/string   l1estimator.h
+	$(CPP) -c testprofile.cpp -o testprofile.obj $(CXXFLAGS)
+
+tn_dr.obj: tn_dr.cpp C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/memory.h C:/Dev-Cpp/include/string.h   C:/Dev-Cpp/include/math.h tn_dr.h fcnbase.h
+	$(CPP) -c tn_dr.cpp -o tn_dr.obj $(CXXFLAGS)
+
+tn_estimator.obj: tn_estimator.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h C:/Dev-Cpp/include/string.h   C:/Dev-Cpp/include/assert.h tn_estimator.h inversion.h   magdatacollection.h magdata.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map C:/Dev-Cpp/include/c++/3.4.2/vector   magfunc.h tn_dr.h fcnbase.h dnls1m_dr.h
+	$(CPP) -c tn_estimator.cpp -o tn_estimator.obj $(CXXFLAGS)
+
+dnls1.obj: dnls1.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/include/stdio.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/math.h
+	$(CPP) -c dnls1.cpp -o dnls1.obj $(CXXFLAGS)
+
+magarray.obj: magarray.cpp C:/Dev-Cpp/include/stdio.h C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magdata.h C:/Dev-Cpp/include/assert.h   magobject.h fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map   C:/Dev-Cpp/include/c++/3.4.2/vector C:/Dev-Cpp/include/c++/3.4.2/string   magfunc.h
+	$(CPP) -c magarray.cpp -o magarray.obj $(CXXFLAGS)
+
+magchannel.obj: magchannel.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magchannel.h profwrapper.h magdata.h   C:/Dev-Cpp/include/assert.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map magarray.h   C:/Dev-Cpp/include/c++/3.4.2/vector C:/Dev-Cpp/include/c++/3.4.2/string
+	$(CPP) -c magchannel.cpp -o magchannel.obj $(CXXFLAGS)
+
+magbackground2.obj: magbackground2.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/string.h C:/Dev-Cpp/include/math.h magbackground2.h   magobject.h fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magbackground2.cpp -o magbackground2.obj $(CXXFLAGS)
+
+splik.obj: splik.cpp C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h
+	$(CPP) -c splik.cpp -o splik.obj $(CXXFLAGS)
+
+magsegments.obj: magsegments.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magsegments.h magpipe.h magobject.h   fieldtype.h C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magsegments.cpp -o magsegments.obj $(CXXFLAGS)
+
+magsnake.obj: magsnake.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magsnake.h magpipe.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map
+	$(CPP) -c magsnake.cpp -o magsnake.obj $(CXXFLAGS)
+
+magdipolethread.obj: magdipolethread.cpp C:/Dev-Cpp/include/_mingw.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stddef.h   C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include/stdarg.h   C:/Dev-Cpp/include/sys/types.h C:/Dev-Cpp/include/stdlib.h   C:/Dev-Cpp/include/math.h magdipolethread.h magobject.h fieldtype.h   C:/Dev-Cpp/include/c++/3.4.2/map magdipole.h magpipe.h
+	$(CPP) -c magdipolethread.cpp -o magdipolethread.obj $(CXXFLAGS)
