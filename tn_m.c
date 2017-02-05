@@ -18,6 +18,7 @@ typedef long int logical;
 typedef double doublereal;
 typedef char *address;
 
+
 #define abs(x) ((x) >= 0 ? (x) : -(x))
 #define dabs(x) (doublereal)abs(x)
 
@@ -51,7 +52,6 @@ double pow_dd(doublereal *ap, doublereal *bp)
 {
 return(pow(*ap, *bp) );
 }
-
 
 
 #endif
